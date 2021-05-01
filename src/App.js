@@ -8,7 +8,7 @@ export default function App() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(11);
+  const [postsPerPage] = useState(10);
   const [error, setError] = useState(false);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-primary mb-3">My Blog</h1>
+      <h1 className="text-primary mb-3">Shweta Kalunge Blog</h1>
 
       {error ? (
         <h1>Something Went Wrong</h1>
